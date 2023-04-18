@@ -8,9 +8,23 @@
     h1{
         width: 100%;
         font-size: 5rem;
+        text-align: center;
         margin-bottom: 4rem;
         background:$gradient ;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }    
+}
+@media (max-width:500px ){
+    #Main{
+        padding: 20px;
+        h1{
+            width: 100%;
+            font-size: 3rem;
+            
+            background:$gradient ;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }   
+    }
 }

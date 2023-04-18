@@ -2,14 +2,16 @@
 @import "../mixins.scss";
 #main{
     background-color: $bg-color;
+    width: 100%;
     flex: 2 1 0;
     border-radius: $container-border-radius;
     section{
         display: flex;
         flex-direction: column;
+        
         h2{
             color: $font-color;
-            font-size: 50px;
+            font-size: 3rem;
             margin-bottom: 1.3rem;
             padding: 15px 50px 0px 50px;
             @include center;
@@ -37,4 +39,30 @@
             
         }
     }
+}
+@media(max-width:430px){
+    #main{
+    
+    section{
+        display: flex;
+        flex-direction: column;
+        
+        h2{
+            font-size: 2rem;
+            padding: 15px 20px 0px 20px;
+            &:after{
+                
+                height: 0;
+                width: 0;
+            }
+    
+        }
+        p{
+            
+            padding: 10px 20px;
+
+        }
+        
+    }
+}
 }
