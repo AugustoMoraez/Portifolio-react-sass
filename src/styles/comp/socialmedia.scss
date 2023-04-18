@@ -1,0 +1,31 @@
+@import "../var.scss";
+@import "../mixins.scss";
+
+#network{
+    @include center;
+    gap:1rem;
+    margin: 1rem 0;
+    .social-btn{
+        padding: .6rem;
+        background-color: $bg-color-secundary;
+        border-radius: $card-border-radius;
+        color: #333;
+        font-size: 1.3rem;
+        @include center;
+        &:hover{
+            background: $gradient;
+            svg{
+                color: $font-color;
+            }
+    
+        }
+        
+    }
+    #Github{
+        color: #fff;
+    }
+    #Linkedin{
+        color:#fff;
+    }
+    
+}

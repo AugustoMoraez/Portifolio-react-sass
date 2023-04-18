@@ -1,0 +1,58 @@
+@import "../mixins.scss";
+@import "../var.scss";
+
+
+#tech{
+    margin-bottom: 1rem;
+
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+
+        .technology-info{
+            @include center;
+            gap: 1rem;
+            padding: 1rem;
+            width: 45%;
+            
+
+            
+            svg{
+                font-size: 6rem;
+                color: #fff;
+            }
+
+        }
+        #html{
+            svg{
+                color: #e44d26;
+            }
+        }
+        #css{
+            svg{
+                color: #1572b6;
+            }
+        }
+        #js{
+            svg{
+                color: #f0db4f;
+            }
+        }
+        #typescript{
+            svg{
+                color: #00618a;
+            }
+        }
+        #sass{
+            svg{
+                color: #ff009d;
+            }
+        }
+        #react{
+            svg{
+                color: #61dafb;
+            }
+        }
+    }
+}
